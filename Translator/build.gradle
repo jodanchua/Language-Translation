@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.ibm.watson.developer_cloud:java-wrapper:1.1.0'
+	compile 'org.glassfish.main.core:glassfish:4.1.1'
+	compile 'javax.servlet:javax.servlet-api:4.0.0-b01'
+	compile 'org.apache.clerezza.ext:org.json.simple:0.4'
+	testCompile 'junit:junit:4.12'
+}

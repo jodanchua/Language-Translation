@@ -1,10 +1,11 @@
-	package java;
+package java;
 
+import Servlet.LanguageTranslationServlet;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-public class langyTest{
+public class langTest{
   private LanguageTranslationServlet lang;
   
   @Before
@@ -12,7 +13,7 @@ public class langyTest{
     lang = new LanguageTranslationServlet();
   }
   
-  @Test(tilangeout=1000)
+  @Test(timeout=1000)
   public void inputShouldReturnCorrectTranslation() {
     assertEquals("'Hello' should be 'Hola' ", "Hola", lang.languageTranslation.translate(request.getParameter("inputText"), "en", "es"));
   }

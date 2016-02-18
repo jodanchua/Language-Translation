@@ -41,6 +41,11 @@ public class LanguageTranslationServlet extends HttpServlet {
 			request.getRequestDispatcher("index.jsp").forward(request,response);
         //processRequest(request, response);
     }
+    
+    public void test{
+    	TranslationResult translated = languageTranslation.translate("hello", "en", "es");
+    	String translatedText = translated.toString();
+    }
 	
 	
 

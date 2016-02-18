@@ -42,7 +42,7 @@ public class LanguageTranslationServlet extends HttpServlet {
         //processRequest(request, response);
     }
     
-    public void test{
+    public void test(){
     	TranslationResult translated = languageTranslation.translate("hello", "en", "es");
     	String translatedText = translated.toString();
     }

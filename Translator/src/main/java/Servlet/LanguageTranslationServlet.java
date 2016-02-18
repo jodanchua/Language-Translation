@@ -42,12 +42,14 @@ public class LanguageTranslationServlet extends HttpServlet {
         //processRequest(request, response);
     }
     
-    public void test(){
+    public String test(){
     	LanguageTranslatorConnector connector = new LanguageTranslatorConnector();
     	LanguageTranslation languageTranslation = new LanguageTranslation();
     	languageTranslation.setUsernameAndPassword(connector.getUsername(),connector.getPassword());
     	TranslationResult translated = languageTranslation.translate("hello", "en", "es");
     	String translatedText = translated.toString();
+    	
+    	return translatedText;
     }
 	
 	

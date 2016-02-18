@@ -15,7 +15,7 @@ public class langTest{
   
   @Test(timeout=1000)
   public void inputShouldReturnCorrectTranslation() {
-  assertEquals("'Hello' should be 'Hola' ", "Hola", lang.languageTranslation.translate("hello", "en", "es"));
+  assertEquals("'Hello' should be 'Hola' ", "Hola", lang.translatedText);
 
   }
   

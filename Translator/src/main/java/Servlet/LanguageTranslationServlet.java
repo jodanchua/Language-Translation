@@ -43,6 +43,9 @@ public class LanguageTranslationServlet extends HttpServlet {
     }
     
     public void test(){
+    	LanguageTranslatorConnector connector = new LanguageTranslatorConnector();
+    	LanguageTranslation languageTranslation = new LanguageTranslation();
+    	languageTranslation.setUsernameAndPassword(connector.getUsername(),connector.getPassword());
     	TranslationResult translated = languageTranslation.translate("hello", "en", "es");
     	String translatedText = translated.toString();
     }
